@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Encode+Sans+SC:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    
+}
+body {
+    background-color: #821D30;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.main-content {
+    width: 90%;
+    max-width: 800px;
+    min-width: unset;
+    height: 442px;
+    background: #FFC5D0;
+    border-radius: 20px;
+    border: 10px solid white ;
+    text-align: center;
+    min-height: 500px;
+    box-shadow: 0px 4px 4px gray;
+}
+
+.heading {
+    padding-top: 2rem;
+    color: #821D30;
+    font-size: 55px;
+    font-family: 'Dancing script',sans-serif;
+    font-weight: 700;
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+}
+
+.heading2 {
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #821D30;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.song-info {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #821D30;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-weight: 600;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+
+
+.mood-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.mood-buttons button {
+    padding: .5rem .75rem;
+    width: 82px;
+    height: 74px;
+    color: #821D30;
+    background-color: #fb6090;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px  #bababa ;
+    border: 5px solid #ffffff;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    font-family: 'playfair display', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+
+}
+.mood-buttons button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    border: 5px solid #fb6090;
+}
+.final-buttons {
+    display: flex;
+    justify-content:center;
+    align-items :center;
+    gap :1rem;
+}
+.resetbtn {
+    width: 62px;
+    height: 55px;
+    background-color: #821D30;
+    border: 3px solid white ;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgb(154, 154, 154);
+    transition: transform 0.2s;
+}
+.resetbtn:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: #821D30;
+    border: 3px  solid #821D30;
+}
+.music-btn {
+    width: 62px;
+    height: 55px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-color: #FFC5D0;
+    border: 3px solid white ;
+    border-radius: 100%;
+    color: white;
+    box-shadow: 0 4px 4px rgb(154, 154, 154);
+    background-image: url('images/music-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    cursor: pointer;
+    overflow: hidden;
+    
+    transition: transform 0.2s;
+}
+.music-btn:hover {
+    transform: scale(1.1);
+    background-color: white;
+    border: 3px  solid #FFC5D0;
+}
+
+/*/pop icons here*/
+
+#pop-icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  pointer-events: none;
+
+}
+.pop-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.sparkle {
+   position: absolute;
+   animation: pop-fade 1.2s ease-out forwards;
+
+}
+@keyframes pop-fade {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    30% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(.8);
+        opacity: 0;
+    }
+}
+
+
+
+.dark-mode-btn {
+    width: 62px;
+    height: 55px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-color: #FFC5D0;
+    border: 3px solid white ;
+    border-radius: 100%;
+    box-shadow: 0 4px 4px rgb(154, 154, 154);
+    background-image: url('images/dark-mode.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.dark-mode-btn:hover {
+    transform: scale(1.1);
+    background-color: white;
+    border: 3px  solid #FFC5D0;
+}
+
+/* Dark mode css*/ 
+
+.dark-mode {
+    background-color: #821D30;
+}
+
+.dark-mode .main-content {
+    background-color: #D73C6B;
+    border-color: rgb(248, 170, 183);
+}
+.dark-mode .heading, .dark-mode .heading2 {
+    color: #ffffff;
+}
+
+.dark-mode .mood-buttons button {
+    background-color: #C94A68;
+    color: white;
+    border-color: #FFC5D0;
+}
+
+.dark-mode .song-info {
+    color: #ddd;
+}
+
+.dark-mode .music-btn,
+.dark-mode .resetbtn,
+.dark-mode .dark-mode-btn {
+    background-color: #C94A68;
+    border-color: #FFC5D0;
+    color: #ffffff;
+}
+
+/* Responsivness CSS starts here*/
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1.5rem;
+        height: fit-content;
+    }
+
+    .mood-buttons {
+        gap: 0.75rem;
+
+    }
+
+    .mood-buttons button {
+        max-width: 100px;
+        min-width: 80px;
+        height: 74px;
+    }
+
+    .resetbtn,
+    .music-btn,
+    .dark-mode-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .heading2 {
+        font-size: 14px;
+    }
+
+    .song-info {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mood-buttons button {
+    flex: 1 1 calc(30% - 1rem);
+    max-width: 100px;
+    min-width: 80px;
+    height: 74px; /* keep consistent height */
+    aspect-ratio: 1 / 1;
+    }
+}
+
+
