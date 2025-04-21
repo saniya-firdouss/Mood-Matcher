@@ -16,3 +16,4 @@ A playful mini web app that matches your mood to a quirky quote and a themed son
 My first ever mini project — designed to make you smile :)
 
 You can tweak the tone if you want it more professional or more playful, just let me know!
+[it's my 1st ever project, if you find any mistake or something missing, feel free to share]
